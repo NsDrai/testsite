@@ -20,6 +20,13 @@ function invertCase($text) {
 $str = 'ПрИвЕт!';
 $strn = 'HeLlO!';
 
-echo invertCase($strn);
+echo invertCase($strn) . "\n";
 
 
+function getCustomDate($timeStamp) {
+    return date('d\/m\/Y', $timeStamp);
+} 
+
+echo getCustomDate(1532435204) . "\n"; // 24/07/2018
+echo getCustomDate(532435204) . "\n";  // 15/11/1986
+echo getCustomDate(5324352) . "\n";    // 03/03/1970
