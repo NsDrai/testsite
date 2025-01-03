@@ -32,7 +32,7 @@ echo getCustomDate(532435204) . "\n";  // 15/11/1986
 echo getCustomDate(5324352) . "\n";    // 03/03/1970
 
 
-function isPalindrome($text) {
+function isPalindrome($text) {  // функция для проверки на палиндром без strrev()
     for ($i = 0; $i <= ceil(mb_strlen($text)/2); $i += 1) {
         if (strlen($text) == 1) {
             return true;
